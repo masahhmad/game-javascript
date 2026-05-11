@@ -68,20 +68,27 @@
       button:hover {
         background-color: rgb(255, 100, 83);
       }
+
+      p {
+        color: rgb(107, 107, 107);
+        font-style: italic;
+        font-size: 0.8rem;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <h1>Where i am?</h1>
-      <div class="container">
+      <p id="message"></p>
+      <div class="container" id="item-container">
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
       </div>
       <div>
-        <input type="number" />
-        <button type="button">Jawab</button>
+        <input id="input-form" type="number" />
+        <button id="submit-button" type="button">Jawab</button>
       </div>
     </div>
   </body>

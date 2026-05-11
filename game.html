@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrapper {
+        padding: 2rem;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid rgb(174, 174, 174);
+        border-radius: 0.5rem;
+      }
+
+      .container {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .item {
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: rgb(238, 238, 238);
+        border-radius: 0.5rem;
+        border: 1px solid rgb(197, 197, 197);
+      }
+
+      .active {
+        background-color: salmon;
+      }
+
+      input,
+      button {
+        border-radius: 0.3rem;
+        border: 1px solid rgb(197, 197, 197);
+      }
+
+      input {
+        padding: 0.5rem;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        background-color: salmon;
+        color: white;
+        cursor: pointer;
+        transition: 400ms;
+      }
+
+      button:hover {
+        background-color: rgb(255, 100, 83);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Where i am?</h1>
+      <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div>
+        <input type="number" />
+        <button type="button">Jawab</button>
+      </div>
+    </div>
+  </body>
+</html>
